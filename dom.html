@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+       first para
+    </p>
+    <input type="button" value="corn"  onclick="changing()">
+    <p id="nom" class="example" >
+        jskjns
+    </p>
+    <p id="exam"></p>
+    <script>
+
+
+        let collection=document.getElementsByTagName('p')
+        console.log(collection[0].innerHTML);
+document.getElementById('exam').innerHTML=collection[1].innerHTML
+let x=document.getElementsByClassName('example')
+console.log(x);
+  
+function changing(){
+
+    document.getElementById('nom').className="example1"
+}
+    </script>
+</body>
+</html>
+<style>
+    .example{
+        color: aqua;
+    }
+    .example1{
+        color: rgb(68, 255, 0);
+        font-size: 40px;
+    }
+</style>
